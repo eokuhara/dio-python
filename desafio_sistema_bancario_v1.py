@@ -42,7 +42,7 @@ while True:
         else:    
             lista_saques.append(valor_saque) 
             total_saques = (len(lista_saques)) 
-            if total_saques > 3: #controla limite de saques
+            if total_saques > LIMITE_SAQUES: #controla limite de saques
                 print("Valor máximo de saques diários atingido! Volte amanhã.")
             else:
                 print("Valor sacado: ","R$ "f"{valor_saque:.2f}")
